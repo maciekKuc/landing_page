@@ -1,0 +1,37 @@
+.text-small{
+	font-size: 1.6rem;
+
+}
+
+.heading{
+	font-size: 1.6rem;
+
+}
+
+.text{
+	
+	&--white{
+		color: $text-white;
+	}
+
+	&--red{
+		color: $text-red;
+	}
+
+	&--orange{
+		color: $text-orange;
+	}
+	
+	&--gray{
+		color: $text-gray;
+	}
+
+}
+
+.mb{
+	margin-bottom: 3rem;
+
+	&--small{
+		margin-bottom: 2rem;
+	}
+}

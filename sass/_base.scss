@@ -1,0 +1,53 @@
+//variables
+$bgc-blue: #465DEF;
+$bgc-blue--faq: #4457F3;
+$bgc-blue--hover: #5B6DF5;
+$bgc-darkBlue: #1C2237;
+$bgc-darkBlue--2: #212844;
+$bgc-grayLight--1: #F6F9FC;
+$bgc-grayLight--2: #E6EBF1;
+
+
+$text-white: #FFF;
+$text-red: #FB726F;
+$text-orange: #F8A86B;
+$text-gray: #838EAB;
+
+//mixins
+
+
+@font-face{
+	font-family: 'San Francisco Pro';
+	src: url('../fonts/SF-Pro-Display-Regular.otf');
+}
+
+font-face{
+	font-family: 'San Francisco Pro';
+	src: url('../fonts/SFProDisplay-Light.otf');
+	font-weight: 300;
+}
+
+html{
+	font-size: 62.5%;
+	margin: 0 auto;
+	font-family: 'San Francisco Pro';
+	font-weight: 300;
+}
+
+li{
+	list-style: none;
+
+}
+
+.btn{
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	font-family: inherit;
+
+	&--blue{
+		background-color: $bgc-blue;
+		
+	}
+}
