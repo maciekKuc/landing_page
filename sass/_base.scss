@@ -16,22 +16,13 @@ $text-gray: #838EAB;
 //mixins
 
 
-@font-face{
-	font-family: 'San Francisco Pro';
-	src: url('../fonts/SF-Pro-Display-Regular.otf');
-}
 
-font-face{
-	font-family: 'San Francisco Pro';
-	src: url('../fonts/SFProDisplay-Light.otf');
-	font-weight: 300;
-}
 
 html{
+	max-width: 1440px;
 	font-size: 62.5%;
 	margin: 0 auto;
-	font-family: 'San Francisco Pro';
-	font-weight: 300;
+	font-family: acumin-pro, sans-serif;
 }
 
 li{
