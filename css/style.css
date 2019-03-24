@@ -1,8 +1,11 @@
 html {
-  max-width: 1440px;
   font-size: 62.5%;
-  margin: 0 auto;
   font-family: acumin-pro, sans-serif; }
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: #EBEDED; }
 
 li {
   list-style: none; }
@@ -39,12 +42,15 @@ li {
   .mb--small {
     margin-bottom: 2rem; }
 
+.happening__content {
+  display: grid; }
+
 .home {
   display: grid;
   grid-template-columns: 55% 45%; }
 
 .hero {
-  background-image: url("../img/Image.jpg");
+  background-image: url("../img/hero.jpg");
   background-size: 100%; }
 
 .navbar {
@@ -56,3 +62,8 @@ li {
   .navbar__item {
     font-size: 1.1rem;
     padding: 0 0.5rem; }
+
+.trending__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; }

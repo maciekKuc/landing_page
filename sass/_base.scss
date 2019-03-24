@@ -4,6 +4,7 @@ $bgc-blue--faq: #4457F3;
 $bgc-blue--hover: #5B6DF5;
 $bgc-darkBlue: #1C2237;
 $bgc-darkBlue--2: #212844;
+$bgc-main: #EBEDED;
 $bgc-grayLight--1: #F6F9FC;
 $bgc-grayLight--2: #E6EBF1;
 
@@ -19,10 +20,14 @@ $text-gray: #838EAB;
 
 
 html{
-	max-width: 1440px;
 	font-size: 62.5%;
-	margin: 0 auto;
 	font-family: acumin-pro, sans-serif;
+}
+
+body{
+	margin: 0 auto;
+	max-width: 1440px;
+	background-color: $bgc-main;
 }
 
 li{
@@ -40,5 +45,15 @@ li{
 	&--blue{
 		background-color: $bgc-blue;
 		
+	}
+}
+
+.time{
+	&__caption{
+
+	}
+
+	&__icon{
+
 	}
 }
