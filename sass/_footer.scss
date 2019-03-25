@@ -1,0 +1,45 @@
+.footer{
+	background-color: $bgc-dark;
+	display: grid;
+	grid-template-columns: repeat(4, min-content) 1fr min-content;
+	grid-gap: 4rem;
+	justify-items: center;
+	align-items: center;
+	padding: 5rem 14rem;
+
+	&__logo{
+
+	}
+
+	&__list{
+
+		&-item{
+
+
+			a{
+				text-decoration: none;
+				color: inherit;
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	&__input{
+		padding: 1rem;
+		border: solid 1px $text-white;
+		border-radius: 2px;
+		background-color: $bgc-dark;
+		width: 260px;
+	}
+
+	&__buttons{
+		align-self: start;
+		display: grid;
+		grid-template-columns: repeat(4, min-content);
+		grid-gap: 1rem;
+	}
+
+	&__button{
+
+	}
+}
