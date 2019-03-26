@@ -1,8 +1,9 @@
 .trending{
-
+	padding: 0 14rem;
+	
 	&__container{
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(3,  360px);
 		grid-gap: 20px;
 	}
 }

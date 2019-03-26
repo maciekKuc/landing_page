@@ -1,10 +1,17 @@
 .home{
 	display: grid;
-	grid-template-columns: 55% 45%;
+	grid-template-columns: 60% 40%;
 	background-color: #fff;
 }
 
 .hero{
 	background-image: url('../img/hero.jpg');
-	background-size: 100%;
+	background-size: cover;
+	display: grid;
+	align-content: center;
+	padding: 15rem;
+
+	.btn{
+		justify-self: start;
+	}
 }
