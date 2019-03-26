@@ -1,11 +1,13 @@
 html {
   font-size: 62.5%;
-  font-family: acumin-pro, sans-serif; }
+  font-family: acumin-pro, sans-serif;
+  background-color: #fff; }
 
 body {
   margin: 0 auto;
   max-width: 1440px;
-  background-color: #EBEDED; }
+  background-color: #EBEDED;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
 
 li {
   list-style: none; }
@@ -19,11 +21,25 @@ li {
   .btn--blue {
     background-color: #465DEF; }
 
-.text-small {
-  font-size: 1.6rem; }
+.mb {
+  margin-bottom: 100px; }
+
+.after::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #EBEDED; }
 
 .heading {
+  font-size: 2.4rem; }
+  .heading--small {
+    font-size: 1.6rem; }
+
+.paragraph {
   font-size: 1.6rem; }
+  .paragraph--small {
+    font-size: 1.3rem; }
 
 .text--white {
   color: #FFF; }
@@ -50,6 +66,8 @@ li {
   justify-items: center;
   align-items: center;
   padding: 5rem 14rem; }
+  .footer__logo {
+    align-self: start; }
   .footer__list-item a {
     text-decoration: none;
     color: inherit;
@@ -59,12 +77,15 @@ li {
     border: solid 1px #FFF;
     border-radius: 2px;
     background-color: #A6ADB4;
-    width: 260px; }
+    width: 260px;
+    background-image: url("../img/send.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%; }
   .footer__buttons {
     align-self: start;
     display: grid;
     grid-template-columns: repeat(4, min-content);
-    grid-gap: 1rem; }
+    grid-gap: 2rem; }
 
 .happening__content {
   display: grid;
@@ -93,7 +114,8 @@ li {
 
 .home {
   display: grid;
-  grid-template-columns: 55% 45%; }
+  grid-template-columns: 55% 45%;
+  background-color: #fff; }
 
 .hero {
   background-image: url("../img/hero.jpg");
@@ -108,6 +130,9 @@ li {
   .navbar__item {
     font-size: 1.1rem;
     padding: 0 0.5rem; }
+
+.news {
+  padding: 10rem; }
 
 .trending__container {
   display: grid;

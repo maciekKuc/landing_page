@@ -8,7 +8,7 @@
 	padding: 5rem 14rem;
 
 	&__logo{
-
+		align-self: start;
 	}
 
 	&__list{
@@ -30,13 +30,16 @@
 		border-radius: 2px;
 		background-color: $bgc-dark;
 		width: 260px;
+		background-image: url('../img/send.svg');
+		background-repeat: no-repeat;
+		background-position: 95% 50%;
 	}
 
 	&__buttons{
 		align-self: start;
 		display: grid;
 		grid-template-columns: repeat(4, min-content);
-		grid-gap: 1rem;
+		grid-gap: 2rem;
 	}
 
 	&__button{
