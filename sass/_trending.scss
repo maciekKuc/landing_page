@@ -4,6 +4,6 @@
 	&__container{
 		display: grid;
 		grid-template-columns: repeat(3,  360px);
-		grid-gap: 20px;
+		justify-content: space-between;
 	}
 }
