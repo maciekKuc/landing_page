@@ -1,4 +1,4 @@
-//variables
+/* background colors */
 $bgc-blue: #465DEF;
 $bgc-blue--faq: #4457F3;
 $bgc-blue--hover: #5B6DF5;
@@ -10,14 +10,15 @@ $bgc-grayLight--2: #E6EBF1;
 $bgc-dark: #A6ADB4;
 $bgc-red: #FF4D4D;
 
-
+/* text colors */
 $text-white: #FFF;
 $text-red: #FB726F;
 $text-orange: #F8A86B;
 $text-gray: #838EAB;
 
-//mixins
-
+/* media queries sizes */
+$tab: 768px;
+$mob: 375px;
 
 
 
