@@ -6,7 +6,7 @@ html {
 body {
   margin: 0 auto;
   max-width: 1440px;
-  background-color: #EBEDED;
+  background-color: #F6F9FC;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
 
 li {
@@ -32,7 +32,7 @@ li {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #EBEDED;
+  background-color: #F6F9FC;
   transform: translateY(2rem); }
 
 .heading {
@@ -151,8 +151,28 @@ li {
     padding: 0 1.5rem; }
     .navbar__item:hover {
       font-weight: 700; }
+    .navbar__item:first-child {
+      position: relative; }
   .navbar__portrait {
     padding-left: 2.5rem; }
+  .navbar__dropdown {
+    display: none;
+    position: absolute;
+    background-color: #F6F9FC;
+    z-index: 1;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0;
+    width: 18rem; }
+    .navbar__dropdown-item {
+      padding: 1rem 2rem;
+      font-weight: 400; }
+      .navbar__dropdown-item:first-child {
+        padding-top: 3.5rem; }
+      .navbar__dropdown-item:hover {
+        font-weight: 700; }
+  .navbar__item:first-child:hover .navbar__dropdown {
+    display: block; }
 
 .news {
   padding: 10rem; }
@@ -163,3 +183,7 @@ li {
     display: grid;
     grid-template-columns: repeat(3, 360px);
     justify-content: space-between; }
+  .trending__card {
+    background-color: #EBEDED; }
+  .trending__note {
+    padding: 4rem; }

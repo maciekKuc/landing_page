@@ -16,9 +16,44 @@
 		&:hover{
 			font-weight: 700;
 		}
+
+		&:first-child{
+			position: relative;
+		}		
 	}
 
 	&__portrait{
 		padding-left: 2.5rem;
 	}
+
+	&__dropdown{
+		display: none;
+  		position: absolute;
+  		background-color: $bgc-main;
+  		z-index: 1;
+  		border-radius: 5px;
+  		text-align: left;
+  		padding: 0;
+  		width: 18rem;
+
+  		&-item{
+  			padding: 1rem 2rem;
+  			font-weight: 400;
+
+  			&:first-child{
+  				padding-top: 3.5rem;
+  			}
+
+
+
+  			&:hover{
+  				font-weight:700;
+  			}
+  		}
+	}
+
+	&__item:first-child:hover .navbar__dropdown{
+			display: block;
+		}
+
 }

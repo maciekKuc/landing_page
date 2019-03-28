@@ -6,4 +6,12 @@
 		grid-template-columns: repeat(3,  360px);
 		justify-content: space-between;
 	}
+
+	&__card{
+		background-color: $bgc-grayLight--1;
+	}
+
+	&__note{
+		padding: 4rem;
+	}
 }
