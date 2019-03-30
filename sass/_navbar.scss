@@ -52,7 +52,7 @@
   		}
 	}
 
-	&__item:first-child:hover .navbar__dropdown{
+	&__item:nth-child(2):hover .navbar__dropdown{
 			display: block;
 		}
 

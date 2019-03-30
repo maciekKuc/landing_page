@@ -4,7 +4,8 @@
 	grid-template-columns: repeat(4, min-content) 1fr min-content;
 	grid-gap: 4rem;
 	justify-items: center;
-	align-items: center;
+	align-content: end;
+	align-items: start;
 	padding: 5rem 14rem;
 
 	@media screen and (max-width: $tab){
@@ -13,9 +14,12 @@
 
 	&__logo{
 		align-self: start;
+		fill: white;
+
 	}
 
 	&__list{
+		margin: 0;
 
 		&-item{
 
@@ -30,13 +34,23 @@
 
 	&__input{
 		padding: 1rem;
-		border: solid 1px $text-white;
+		border: solid 1px $bgc-grayLight--2;
 		border-radius: 2px;
 		background-color: $bgc-dark;
 		width: 260px;
 		background-image: url('../img/send.svg');
 		background-repeat: no-repeat;
 		background-position: 95% 50%;
+		color: $bgc-grayLight--2;
+
+		&:active,
+		&:focus{
+			border: solid 1px $focus;
+		}
+
+		&:invalid{
+			border: solid 1px $invalid;
+		}
 	}
 
 	&__buttons{
@@ -44,6 +58,7 @@
 		display: grid;
 		grid-template-columns: repeat(4, min-content);
 		grid-gap: 2rem;
+		margin: 0;
 	}
 
 	&__button{
