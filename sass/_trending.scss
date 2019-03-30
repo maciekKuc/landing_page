@@ -1,5 +1,13 @@
 .trending{
 	padding: 0 14rem;
+
+	@media screen and (max-width: $tab){
+			padding: 0 8rem;
+	}
+	
+	@media screen and (max-width: $mob){
+			padding: 0 2rem;
+		}
 	
 	&__container{
 		display: grid;

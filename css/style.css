@@ -21,9 +21,12 @@ li {
   border: none;
   border-radius: 5px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  font-family: inherit; }
+  font-family: inherit;
+  transition: all .2s; }
   .btn--red {
     background-color: #FF4D4D; }
+  .btn:active {
+    transform: translateY(20%); }
 
 .mb {
   margin-bottom: 100px; }
@@ -113,6 +116,12 @@ li {
 
 .happening {
   padding: 0 14rem; }
+  @media screen and (max-width: 768px) {
+    .happening {
+      padding: 0 8rem; } }
+  @media screen and (max-width: 500px) {
+    .happening {
+      padding: 0 2rem; } }
   .happening__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -161,6 +170,12 @@ li {
   display: grid;
   align-content: center;
   padding: 15rem; }
+  @media screen and (max-width: 768px) {
+    .hero {
+      padding: 8rem; } }
+  @media screen and (max-width: 500px) {
+    .hero {
+      padding: 2rem; } }
   .hero .btn {
     justify-self: start; }
 
@@ -201,9 +216,30 @@ li {
 
 .news {
   padding: 10rem; }
+  @media screen and (max-width: 768px) {
+    .news {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 8rem; } }
+  @media screen and (max-width: 500px) {
+    .news {
+      grid-template-columns: 1fr;
+      padding: 2rem; } }
+  @media screen and (max-width: 768px) {
+    .news__note {
+      grid-row: 2 / 3; } }
+  @media screen and (max-width: 500px) {
+    .news__note {
+      grid-row: auto; } }
 
 .trending {
   padding: 0 14rem; }
+  @media screen and (max-width: 768px) {
+    .trending {
+      padding: 0 8rem; } }
+  @media screen and (max-width: 500px) {
+    .trending {
+      padding: 0 2rem; } }
   .trending__container {
     display: grid;
     grid-template-columns: repeat(3, 360px);

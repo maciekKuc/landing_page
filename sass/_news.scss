@@ -1,7 +1,28 @@
 .news{
 	padding: 10rem;
 
+	@media screen and (max-width: $tab){
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 8rem;
+	}
+
+	@media screen and (max-width: $mob){
+		grid-template-columns: 1fr;
+		padding: 2rem;
+	}
+		
 	&__note{
 		
+
+		@media screen and (max-width: $tab){
+			grid-row: 2 / 3;
+		}
+
+		@media screen and (max-width: $mob){
+			grid-row: auto;
+		}
 	}
+
+
 }

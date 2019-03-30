@@ -22,7 +22,7 @@ $text-gray: #838EAB;
 
 /* media queries sizes */
 $tab: 768px;
-$mob: 375px;
+$mob: 500px;
 
 
 
@@ -50,10 +50,15 @@ li{
 	border-radius: 5px;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 	font-family: inherit;
+	transition: all .2s;
 
 	&--red{
 		background-color: $bgc-red;
 		
+	}
+
+	&:active{
+		transform: translateY(20%);
 	}
 
 
