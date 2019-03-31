@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.typekit.net/ntl5oop.css">
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
 	<title></title>
 
 </head>
@@ -55,23 +56,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="news__button news__button--prev">
-				<svg class="news__icon">
-                	<use xlink:href="img/sprite.svg#icon-chevron-thin-left"></use>
-            	</svg>
-			</div>
-    		<div class="news__button news__button--next">
-    			<svg class="news__icon">
-                	<use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
-            	</svg>
-    		</div>
+			<div class="swiper-button-prev"></div>
+    		<div class="swiper-button-next"></div>
 		</div>
 	</div>
 	
 	<div class="trending mt">
 		<h1 class="heading">TRENDING</h1>
-			<div class="trending__container">
-			<div class="trending__card">
+		<div class="trending__swiper">
+			<div class="trending__container swiper-wrapper">
+			<div class="trending__card swiper-slide">
 				<img src="img/trending-1.jpg" alt="" class="trending__photo">
 				<div class="trending__note">
 					<h2 class="heading--small">Dolore magna aliqua</h2>
@@ -79,7 +73,7 @@
 					<p class="time__caption text--gray"><img src="img/time.svg" alt="clock icon" class="time__icon"> 2m ago</p>
 				</div>
 			</div>
-			<div class="trending__card">
+			<div class="trending__card swiper-slide">
 				<img src="img/trending-2.jpg" alt="" class="trending__photo">
 				<div class="trending__note">
 					<h2 class="heading--small">Morbi eleifend a libero</h2>
@@ -87,7 +81,7 @@
 					<p class="time__caption text--gray"><img src="img/time.svg" alt="clock icon" class="time__icon "> 1h ago</p>
 				</div>
 			</div>
-			<div class="trending__card">
+			<div class="trending__card swiper-slide">
 				<img src="img/trending-3.jpg" alt="" class="trending__photo">
 				<div class="trending__note">
 					<h2 class="heading--small">Morbi eleifend a libero</h2>
@@ -96,6 +90,9 @@
 				</div>
 			</div>
 		</div>
+		</div>
+		<div class="swiper-button-prev"></div>
+    	<div class="swiper-button-next"></div>
 	</div>
 	<div class="happening mb mt">
 		<h1 class="heading">HAPPENING NOW</h1>

@@ -2,10 +2,19 @@
 	padding: 10rem;
 	position: relative;
 
+	.swiper-container {
+    
+    max-width: 100vw;
+}
+
 	@media screen and (max-width: $tab){
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		padding: 8rem;
+
+		.swiper-wrapper{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			padding: 8rem;
+		}
+		
 	}
 
 	@media screen and (max-width: $mob){
@@ -25,24 +34,21 @@
 		}
 	}
 
-	&__button{
-			display: inline-block;
-			width: 3rem;
-			height: 3rem;
-			border-radius: 50%;
-			background-color: rgba(0, 0, 0, 0.3);
-			position: fixed;
-			top: 10%;
-
-			&--next{
-				left: .5rem;
-			}
-	}
-
 	&__icon{
 		width: 3rem;
 		height: 3rem;
 	}
 
 
+}
+
+.swiper-button{
+	&-next,
+	&-prev{
+			display: inline-block;
+			fill: black;
+			top: 40%;
+	}
+
+	
 }

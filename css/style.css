@@ -217,8 +217,10 @@ li {
 .news {
   padding: 10rem;
   position: relative; }
+  .news .swiper-container {
+    max-width: 100vw; }
   @media screen and (max-width: 768px) {
-    .news {
+    .news .swiper-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 8rem; } }
@@ -232,19 +234,14 @@ li {
   @media screen and (max-width: 500px) {
     .news__note {
       grid-row: auto; } }
-  .news__button {
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 10%; }
-    .news__button--next {
-      left: .5rem; }
   .news__icon {
     width: 3rem;
     height: 3rem; }
+
+.swiper-button-next, .swiper-button-prev {
+  display: inline-block;
+  fill: black;
+  top: 40%; }
 
 .trending {
   padding: 0 14rem; }
