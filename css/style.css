@@ -215,7 +215,8 @@ li {
     display: block; }
 
 .news {
-  padding: 10rem; }
+  padding: 10rem;
+  position: relative; }
   @media screen and (max-width: 768px) {
     .news {
       display: grid;
@@ -231,6 +232,19 @@ li {
   @media screen and (max-width: 500px) {
     .news__note {
       grid-row: auto; } }
+  .news__button {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 10%; }
+    .news__button--next {
+      left: .5rem; }
+  .news__icon {
+    width: 3rem;
+    height: 3rem; }
 
 .trending {
   padding: 0 14rem; }

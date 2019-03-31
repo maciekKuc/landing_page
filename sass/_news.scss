@@ -1,5 +1,6 @@
 .news{
 	padding: 10rem;
+	position: relative;
 
 	@media screen and (max-width: $tab){
 		display: grid;
@@ -22,6 +23,25 @@
 		@media screen and (max-width: $mob){
 			grid-row: auto;
 		}
+	}
+
+	&__button{
+			display: inline-block;
+			width: 3rem;
+			height: 3rem;
+			border-radius: 50%;
+			background-color: rgba(0, 0, 0, 0.3);
+			position: fixed;
+			top: 10%;
+
+			&--next{
+				left: .5rem;
+			}
+	}
+
+	&__icon{
+		width: 3rem;
+		height: 3rem;
 	}
 
 

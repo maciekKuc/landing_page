@@ -39,18 +39,32 @@
 		</div>
 		<div class="news">
 			<h1 class="heading after mb">MORE NEWS</h1>
-			<div class="news__note">
-				<h2 class="heading--small text--red">TRAVEL</h2>
-				<h2 class="heading--small">Article title</h2>
-				<p class="paragraph text--gray">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
-				<p class="time__caption"><img src="img/time.svg" alt="clock icon" class="time__icon"> 2m ago</p>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="news__note swiper-slide">
+						<h2 class="heading--small text--red">TRAVEL</h2>
+						<h2 class="heading--small">Article title</h2>
+						<p class="paragraph text--gray">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
+						<p class="time__caption"><img src="img/time.svg" alt="clock icon" class="time__icon"> 2m ago</p>
+					</div>
+					<div class="news__note swiper-slide">
+						<h2 class="heading--small text--red">TECHNOLOGY</h2>
+						<h2 class="heading--small">Article title</h2>
+						<p class="paragraph text--gray">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
+						<p class="time__caption"><img src="img/time.svg" alt="clock icon" class="time__icon"> 1h ago</p>
+					</div>
+				</div>
 			</div>
-			<div class="news__note">
-				<h2 class="heading--small text--red">TECHNOLOGY</h2>
-				<h2 class="heading--small">Article title</h2>
-				<p class="paragraph text--gray">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
-				<p class="time__caption"><img src="img/time.svg" alt="clock icon" class="time__icon"> 1h ago</p>
+			<div class="news__button news__button--prev">
+				<svg class="news__icon">
+                	<use xlink:href="img/sprite.svg#icon-chevron-thin-left"></use>
+            	</svg>
 			</div>
+    		<div class="news__button news__button--next">
+    			<svg class="news__icon">
+                	<use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+            	</svg>
+    		</div>
 		</div>
 	</div>
 	
@@ -147,5 +161,6 @@
 		</ul>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+	<script src="src/main.js"></script>
 </body>
 </html>
