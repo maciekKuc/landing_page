@@ -215,12 +215,9 @@ li {
     display: block; }
 
 .news {
-  padding: 10rem;
-  position: relative; }
-  .news .swiper-container {
-    max-width: 100vw; }
+  padding: 10rem; }
   @media screen and (max-width: 768px) {
-    .news .swiper-wrapper {
+    .news {
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 8rem; } }
@@ -234,28 +231,25 @@ li {
   @media screen and (max-width: 500px) {
     .news__note {
       grid-row: auto; } }
-  .news__icon {
-    width: 3rem;
-    height: 3rem; }
-
-.swiper-button-next, .swiper-button-prev {
-  display: inline-block;
-  fill: black;
-  top: 40%; }
 
 .trending {
-  padding: 0 14rem; }
+  padding: 0 14rem;
+  position: relative; }
   @media screen and (max-width: 768px) {
     .trending {
       padding: 0 8rem; } }
   @media screen and (max-width: 500px) {
     .trending {
       padding: 0 2rem; } }
-  .trending__container {
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
-    justify-content: space-between; }
+  .trending__swiper-buttons {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 0rem;
+    right: 10vw; }
   .trending__card {
     background-color: #EBEDED; }
   .trending__note {
     padding: 4rem; }
+  .trending__photo {
+    width: 100%; }
