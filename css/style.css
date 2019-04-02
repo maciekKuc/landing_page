@@ -68,6 +68,8 @@ li {
   margin-bottom: 5rem; }
   .mb--small {
     margin-bottom: 2rem; }
+  .mb--smallest {
+    margin-bottom: .5rem; }
 
 .mt {
   margin-top: 5rem; }
@@ -81,7 +83,7 @@ li {
   align-content: end;
   align-items: start;
   padding: 5rem 14rem; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .footer {
       grid-template-columns: 50% repeat(3, min-content); } }
   .footer__logo {
@@ -116,7 +118,7 @@ li {
 
 .happening {
   padding: 0 14rem; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .happening {
       padding: 0 8rem; } }
   @media screen and (max-width: 500px) {
@@ -127,6 +129,12 @@ li {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 110px);
     grid-gap: 40px; }
+    @media screen and (max-width: 1200px) {
+      .happening__content {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media screen and (max-width: 500px) {
+      .happening__content {
+        grid-template-columns: 1fr; } }
   .happening__card {
     background-size: cover; }
     .happening__card--1 {
@@ -150,17 +158,31 @@ li {
         position: absolute; }
     .happening__card--3, .happening__card--4, .happening__card--5 {
       grid-column: 3 / 4; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       .happening__card--1, .happening__card--2 {
         grid-column: 1 / -1; }
       .happening__card--3, .happening__card--4, .happening__card--5 {
-        grid-row: 7 / 8; } }
+        grid-row: 7 / 8; }
+      .happening__card--3 {
+        grid-column: 1 / 2; }
+      .happening__card--4 {
+        grid-column: 2 / 3; }
+      .happening__card--5 {
+        display: none; } }
+    @media screen and (max-width: 500px) {
+      .happening__card--1, .happening__card--2, .happening__card--3, .happening__card--4, .happening__card--5 {
+        grid-column: 1 / -1; }
+      .happening__card--4 {
+        grid-row: 8 / 9; }
+      .happening__card--5 {
+        display: block;
+        grid-row: 9 / 10; } }
 
 .home {
   display: grid;
   grid-template-columns: 60% 40%;
   background-color: #fff; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .home {
       grid-template-columns: 1fr; } }
 
@@ -170,7 +192,7 @@ li {
   display: grid;
   align-content: center;
   padding: 15rem; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .hero {
       padding: 8rem; } }
   @media screen and (max-width: 500px) {
@@ -216,7 +238,7 @@ li {
 
 .news {
   padding: 10rem; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .news {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -225,7 +247,7 @@ li {
     .news {
       grid-template-columns: 1fr;
       padding: 2rem; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .news__note {
       grid-row: 2 / 3; } }
   @media screen and (max-width: 500px) {
@@ -233,18 +255,23 @@ li {
       grid-row: auto; } }
 
 .trending {
-  padding: 0 14rem; }
-  @media screen and (max-width: 768px) {
+  padding: 0 14rem;
+  position: relative; }
+  @media screen and (max-width: 1200px) {
     .trending {
       padding: 0 8rem; } }
   @media screen and (max-width: 500px) {
     .trending {
       padding: 0 2rem; } }
-  .trending__container {
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
-    justify-content: space-between; }
+  .trending__swiper-buttons {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 0rem;
+    right: 10vw; }
   .trending__card {
     background-color: #EBEDED; }
   .trending__note {
     padding: 4rem; }
+  .trending__photo {
+    width: 100%; }

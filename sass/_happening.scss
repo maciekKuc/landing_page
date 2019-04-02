@@ -14,6 +14,14 @@
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(6, 110px);
 		grid-gap: 40px;
+
+		@media screen and (max-width: $tab){
+			grid-template-columns: repeat(2, 1fr);
+		}
+	
+		@media screen and (max-width: $mob){
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__card{
@@ -69,6 +77,38 @@
 			&--4,
 			&--5{
 				grid-row: 7 / 8;
+			}
+
+			&--3{
+				grid-column: 1 / 2;
+			}
+
+			&--4{
+				grid-column: 2 / 3;
+			}
+
+			&--5{
+				display: none;
+			}
+
+		}
+
+		@media screen and (max-width: $mob){
+			&--1,
+			&--2,
+			&--3,
+			&--4,
+			&--5{
+				grid-column: 1 / -1;
+			}
+
+			&--4{
+				grid-row: 8 / 9;
+			}
+
+			&--5{
+				display: block;
+				grid-row: 9 / 10;
 			}
 
 		}
