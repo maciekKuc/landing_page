@@ -10,6 +10,8 @@
 
 	@media screen and (max-width: $tab){
 		grid-template-columns: 50% repeat(3, min-content);
+		padding: 5rem 9rem;
+		grid-gap: 2rem;
 	}
 
 	&__logo{

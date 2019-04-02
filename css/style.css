@@ -2,10 +2,20 @@
 /* border colors */
 /* text colors */
 /* media queries sizes */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
 html {
   font-size: 62.5%;
   font-family: acumin-pro, sans-serif;
   background-color: #fff; }
+  @media screen and (max-width: 500px) {
+    html {
+      font-size: 50%; } }
 
 body {
   margin: 0 auto;
@@ -85,7 +95,9 @@ li {
   padding: 5rem 14rem; }
   @media screen and (max-width: 1200px) {
     .footer {
-      grid-template-columns: 50% repeat(3, min-content); } }
+      grid-template-columns: 50% repeat(3, min-content);
+      padding: 5rem 9rem;
+      grid-gap: 2rem; } }
   .footer__logo {
     align-self: start;
     fill: white; }
@@ -131,10 +143,12 @@ li {
     grid-gap: 40px; }
     @media screen and (max-width: 1200px) {
       .happening__content {
-        grid-template-columns: repeat(2, 1fr); } }
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 15vw); } }
     @media screen and (max-width: 500px) {
       .happening__content {
-        grid-template-columns: 1fr; } }
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 20vw); } }
   .happening__card {
     background-size: cover; }
     .happening__card--1 {
@@ -177,6 +191,8 @@ li {
       .happening__card--5 {
         display: block;
         grid-row: 9 / 10; } }
+  .happening__photo {
+    width: 100%; }
 
 .home {
   display: grid;

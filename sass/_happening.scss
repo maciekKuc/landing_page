@@ -17,10 +17,12 @@
 
 		@media screen and (max-width: $tab){
 			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(6, 15vw);
 		}
 	
 		@media screen and (max-width: $mob){
 			grid-template-columns: 1fr;
+			grid-template-rows: repeat(6, 20vw);
 		}
 	}
 
@@ -115,6 +117,6 @@
 	}
 
 	&__photo{
-
+		width: 100%;
 	}
 }

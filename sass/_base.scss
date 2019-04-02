@@ -24,16 +24,27 @@ $text-gray: #838EAB;
 $tab: 1200px;
 $mob: 500px;
 
-
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
 
 html{
 	font-size: 62.5%;
 	font-family: acumin-pro, sans-serif;
 	background-color: #fff;
+
+	@media screen and (max-width: $mob){
+		font-size: 50%;
+	}
 }
 
 body{
 	margin: 0 auto;
+
 	max-width: 1440px;
 	background-color: $bgc-main;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);

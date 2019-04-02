@@ -9,7 +9,7 @@ const newsSwiper = new Swiper ('.swiper-container', {
       	spaceBetween: 10
     	},
     // when window width is <= 480px
-    	768: {
+    	1200: {
       	slidesPerView: 2,
       	spaceBetween: 20
     	}
