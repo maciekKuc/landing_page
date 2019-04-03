@@ -17,19 +17,46 @@
 	&__logo{
 		align-self: start;
 		fill: white;
-
+		
+		@media screen and (max-width: $mob){
+			grid-row:  1 / 2;
+		}
+	
 	}
 
 	&__list{
 		margin: 0;
 
-		&-item{
+		@media screen and (max-width: $mob){
 
+			&:nth-child(2){
+				grid-row:  2 / 3;
+			}
+
+			&:not(:nth-child(2)){
+				grid-row:  3 / 4;
+			}
+		}
+
+		&-item{
 
 			a{
 				text-decoration: none;
 				color: inherit;
 				font-size: 1.5rem;
+
+				@media screen and (max-width: $mob){
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+				}
+			}
+
+			&:last-child{
+				display: none;
+
+				@media screen and (max-width: $mob){
+					display: block;
+				}
 			}
 		}
 	}
@@ -53,6 +80,14 @@
 		&:invalid{
 			border: solid 1px $invalid;
 		}
+	
+	}
+
+	&__form{
+
+		@media screen and (max-width: $mob){
+			display: none;
+		}
 	}
 
 	&__buttons{
@@ -61,6 +96,19 @@
 		grid-template-columns: repeat(4, min-content);
 		grid-gap: 2rem;
 		margin: 0;
+
+		@media screen and (max-width: $mob){
+			grid-row:  4 / 5;
+		}
+	}
+
+	&__icon{
+		display: none;
+
+		@media screen and (max-width: $mob){
+			display: block;
+			margin-right: 1rem;
+		}
 	}
 
 	&__button{
