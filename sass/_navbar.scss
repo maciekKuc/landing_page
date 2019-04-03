@@ -19,6 +19,13 @@
 
 		&:first-child{
 			position: relative;
+		}
+
+		@media screen and (max-width: $mob){
+		
+			&:not(:last-child){
+				display: none;
+			}
 		}		
 	}
 
@@ -44,12 +51,18 @@
   				padding-top: 3.5rem;
   			}
 
-
-
   			&:hover{
   				font-weight:700;
   			}
   		}
+	}
+
+	&__menu{
+		display: none;
+
+		@media screen and (max-width: $mob){
+			display: block;
+		}
 	}
 
 	&__item:nth-child(2):hover .navbar__dropdown{

@@ -76,7 +76,19 @@ li{
 }
 
 .mb{
-	margin-bottom: 100px;
+	margin-bottom: 4rem;
+
+	&--small{
+		margin-bottom: 2rem;
+	}
+
+	&--smallest{
+		margin-bottom: .5rem;
+	}
+}
+
+.mt{
+	margin-top: 5rem;
 }
 
 .time{
