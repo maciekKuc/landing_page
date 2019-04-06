@@ -30,3 +30,9 @@ const newsSwiper = new Swiper ('.swiper-container', {
 
   });
 
+const menuButton = document.querySelector('.navbar__menu');
+
+menuButton.addEventListener('click', () =>{
+  menuButton.classList.toggle('visible');
+});
+

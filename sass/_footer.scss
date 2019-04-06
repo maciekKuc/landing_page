@@ -30,7 +30,7 @@
 		@media screen and (max-width: $mob){
 
 			&:nth-child(2){
-				grid-row:  2 / 3;
+				display: none;
 			}
 
 			&:not(:nth-child(2)){
@@ -99,15 +99,6 @@
 
 		@media screen and (max-width: $mob){
 			grid-row:  4 / 5;
-		}
-	}
-
-	&__icon{
-		display: none;
-
-		@media screen and (max-width: $mob){
-			display: block;
-			margin-right: 1rem;
 		}
 	}
 
