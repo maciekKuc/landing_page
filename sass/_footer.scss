@@ -19,7 +19,7 @@
 		fill: white;
 		
 		@media screen and (max-width: $mob){
-			grid-row:  1 / 2;
+			display: none;
 		}
 	
 	}
@@ -44,6 +44,7 @@
 				text-decoration: none;
 				color: inherit;
 				font-size: 1.5rem;
+				font-weight: 700;
 
 				@media screen and (max-width: $mob){
 					display: grid;
@@ -97,12 +98,27 @@
 		grid-gap: 2rem;
 		margin: 0;
 
+		@media screen and (max-width: $tab){
+			
+		}
+
 		@media screen and (max-width: $mob){
 			grid-row:  4 / 5;
 		}
 	}
 
 	&__button{
+		height: 2rem;
+		width: 2rem;
+	}
 
+	&__mobile{
+		@media screen and (max-width: $mob){
+			position: absolute;
+			top: 40rem;
+			left: 0;
+			width: 75vw;
+  			z-index: 1;
+		}
 	}
 }

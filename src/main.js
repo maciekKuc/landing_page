@@ -31,8 +31,10 @@ const newsSwiper = new Swiper ('.swiper-container', {
   });
 
 const menuButton = document.querySelector('.navbar__menu');
+const footer  =document.querySelector('.footer');
 
 menuButton.addEventListener('click', () =>{
   menuButton.classList.toggle('visible');
+  footer.classList.toggle('footer__mobile');
 });
 

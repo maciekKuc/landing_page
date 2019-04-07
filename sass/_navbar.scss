@@ -78,17 +78,35 @@
 
 	&__item:nth-child(2):hover .navbar__dropdown{
 			display: block;
+
+			@media screen and (max-width: $mob){
+				display: none;
+			}
 		} 
+
+	.visible ~ .navbar__list,
+	.visible ~ .navbar__logo{
+		@media screen and (max-width: $mob){
+				position: absolute;
+				top: 4.8rem;
+				left: 0;
+  				background-color: $bgc-main;
+		}
+	}
+
+	.visible ~ .navbar__logo{
+		@media screen and (max-width: $mob){
+				padding: 4rem;
+  				z-index: 2;
+		}
+	}
 
 	.visible ~ .navbar__list{
 		@media screen and (max-width: $mob){
-				position: absolute;
-				top: 4.6rem;
 				width: 75vw;
-  				background-color: $bgc-main;
   				z-index: 1;
   				text-align: left;
-  				padding: 0;
+  				padding: 10rem 0;
 				display: grid;
 				grid-gap: 2rem;
 

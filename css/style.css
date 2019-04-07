@@ -101,7 +101,7 @@ li {
     fill: white; }
     @media screen and (max-width: 500px) {
       .footer__logo {
-        grid-row: 1 / 2; } }
+        display: none; } }
   .footer__list {
     margin: 0; }
     @media screen and (max-width: 500px) {
@@ -112,7 +112,8 @@ li {
     .footer__list-item a {
       text-decoration: none;
       color: inherit;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-weight: 700; }
       @media screen and (max-width: 500px) {
         .footer__list-item a {
           display: grid;
@@ -148,6 +149,16 @@ li {
     @media screen and (max-width: 500px) {
       .footer__buttons {
         grid-row: 4 / 5; } }
+  .footer__button {
+    height: 2rem;
+    width: 2rem; }
+  @media screen and (max-width: 500px) {
+    .footer__mobile {
+      position: absolute;
+      top: 40rem;
+      left: 0;
+      width: 75vw;
+      z-index: 1; } }
 
 .happening {
   padding: 0 14rem; }
@@ -288,15 +299,26 @@ li {
         margin-right: 1rem; } }
   .navbar__item:nth-child(2):hover .navbar__dropdown {
     display: block; }
+    @media screen and (max-width: 500px) {
+      .navbar__item:nth-child(2):hover .navbar__dropdown {
+        display: none; } }
+  @media screen and (max-width: 500px) {
+    .navbar .visible ~ .navbar__list,
+    .navbar .visible ~ .navbar__logo {
+      position: absolute;
+      top: 4.8rem;
+      left: 0;
+      background-color: #F6F9FC; } }
+  @media screen and (max-width: 500px) {
+    .navbar .visible ~ .navbar__logo {
+      padding: 4rem;
+      z-index: 2; } }
   @media screen and (max-width: 500px) {
     .navbar .visible ~ .navbar__list {
-      position: absolute;
-      top: 4.6rem;
       width: 75vw;
-      background-color: #F6F9FC;
       z-index: 1;
       text-align: left;
-      padding: 0;
+      padding: 10rem 0;
       display: grid;
       grid-gap: 2rem; } }
   @media screen and (max-width: 500px) {
