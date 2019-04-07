@@ -14,6 +14,11 @@
 		grid-gap: 2rem;
 	}
 
+	@media screen and (max-width: $mob){
+		padding: 5rem 0;
+		display: none;
+	}
+
 	&__logo{
 		align-self: start;
 		fill: white;
@@ -114,6 +119,7 @@
 
 	&__mobile{
 		@media screen and (max-width: $mob){
+			display: grid;
 			position: absolute;
 			top: 40rem;
 			left: 0;
