@@ -14,13 +14,21 @@
 <body>
 	<nav class="navbar">
 		<img src="img/menu icon.svg" class="navbar__menu">
-		<img src="img/LOGO.svg" class="navbar__logo">
+		<svg class="navbar__logo">
+            <use xlink:href="img/LOGO.svg#LOGO"></use>
+        </svg>
 		<ul class="navbar__list">
-			<li class="navbar__item">
-				<img src="img/home.svg" alt="home icon" class="navbar__icon">HOME
+			<li class="navbar__item text--gray">
+				<svg class="navbar__icon">
+            		<use xlink:href="img/home.svg#home"></use>
+        		</svg>
+				<!--<img src="img/home.svg" alt="home icon" class="navbar__icon">-->HOME
 			</li>
 			<li class="navbar__item text--gray">
-				<img src="img/discover.svg" alt="discovery icon" class="navbar__icon">DISCOVERY
+				<svg class="navbar__icon">
+            		<use xlink:href="img/discover.svg#discover"></use>
+        		</svg>
+				<!--<img src="img/discover.svg" alt="discovery icon" class="navbar__icon">-->DISCOVERY
 				<ul class="navbar__dropdown">
 					<li class="navbar__dropdown-item">WORLD NEWS</li>
 					<li class="navbar__dropdown-item">TRAVEL</li>
@@ -30,13 +38,19 @@
 					<li class="navbar__dropdown-item">MORE...</li>
 				</ul>
 			</li>
-			<li class="navbar__item">
-				<img src="img/photos.svg" alt="photo icon" class="navbar__icon">PHOTOS
+			<li class="navbar__item text--gray">
+				<svg class="navbar__icon">
+            		<use xlink:href="img/photos.svg#photos"></use>
+        		</svg>
+				<!--<img src="img/photos.svg" alt="photo icon" class="navbar__icon">-->PHOTOS
 			</li>
-			<li class="navbar__item">
-				<img src="img/mail.svg" alt="mail icon" class="navbar__icon">CONTACT
+			<li class="navbar__item text--gray">
+				<svg class="navbar__icon">
+            		<use xlink:href="img/mail.svg#mail"></use>
+        		</svg>
+				<!--<img src="img/mail.svg" alt="mail icon" class="navbar__icon">-->CONTACT
 			</li>
-			<li class="navbar__item"><img src="img/avatar-photo.png" alt="avatar photo" class="nav__portrait"></li>
+			<li class="navbar__item"><img src="img/avatar-photo.png" alt="avatar photo" class="nav__portrait"><span class="navbar__profile-text text--gray">PROFILE</span></li>
 		</ul>
 	</nav>
 	<div class="home" id="home">

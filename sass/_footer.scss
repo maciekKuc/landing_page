@@ -3,7 +3,7 @@
 	display: grid;
 	grid-template-columns: repeat(4, min-content) 1fr min-content;
 	grid-gap: 4rem;
-	justify-items: center;
+	justify-content: space-around;
 	align-content: end;
 	align-items: start;
 	padding: 5rem 14rem;
@@ -15,14 +15,15 @@
 	}
 
 	@media screen and (max-width: $mob){
+		
+		grid-template-columns: repeat(2, min-content);
 		padding: 5rem 0;
 		display: none;
 	}
 
 	&__logo{
 		align-self: start;
-		fill: white;
-		
+
 		@media screen and (max-width: $mob){
 			display: none;
 		}
@@ -36,6 +37,7 @@
 
 			&:nth-child(2){
 				display: none;
+				width: 0;
 			}
 
 			&:not(:nth-child(2)){

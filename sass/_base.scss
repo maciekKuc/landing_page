@@ -19,6 +19,7 @@ $text-white: #FFF;
 $text-red: #FB726F;
 $text-orange: #F8A86B;
 $text-gray: #838EAB;
+$text-black: #000;
 
 /* media queries sizes */
 $tab: 1200px;
@@ -36,10 +37,6 @@ html{
 	font-size: 62.5%;
 	font-family: Helvetica, Arial;
 	background-color: #fff;
-
-	@media screen and (max-width: $mob){
-		font-size: 50%;
-	}
 }
 
 body{
