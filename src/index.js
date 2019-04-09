@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+
 const newsSwiper = new Swiper ('.swiper-container', {
     
     slidesPerView: 3,

@@ -75,12 +75,20 @@ li{
 .mb{
 	margin-bottom: 4rem;
 
+	&--big{
+		margin-bottom: 8rem;
+	}
+
 	&--small{
 		margin-bottom: 2rem;
 	}
 
 	&--smallest{
 		margin-bottom: .5rem;
+	}
+
+	@media screen and (max-width: $tab){
+		margin-bottom: 2rem;
 	}
 }
 
@@ -94,7 +102,7 @@ li{
 	}
 
 	&__icon{
-
+		margin-right: 0.5rem;
 	}
 }
 
@@ -106,6 +114,6 @@ li{
 		width: 100%;
 		height: 3px;
 		background-color: $bgc-main;
-		transform: translateY(2rem);
+		transform: translateY(4rem);
 	}
 }
