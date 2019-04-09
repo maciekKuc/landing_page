@@ -22,7 +22,7 @@
 	}
 
 	&__logo{
-		align-self: start;
+		padding: 1rem; 
 
 		@media screen and (max-width: $mob){
 			display: none;
@@ -71,7 +71,7 @@
 
 	&__input{
 		padding: 1rem;
-		border: solid 1px $bgc-grayLight--2;
+		
 		border-radius: 2px;
 		background-color: $bgc-dark;
 		width: 260px;
@@ -87,6 +87,10 @@
 
 		&:invalid{
 			border: solid 1px $invalid;
+		}
+
+		&:empty{
+			border: solid 1px $bgc-grayLight--2;
 		}
 	
 	}

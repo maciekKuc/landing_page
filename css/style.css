@@ -111,7 +111,7 @@ li {
       padding: 5rem 0;
       display: none; } }
   .footer__logo {
-    align-self: start; }
+    padding: 1rem; }
     @media screen and (max-width: 500px) {
       .footer__logo {
         display: none; } }
@@ -139,7 +139,6 @@ li {
           display: block; } }
   .footer__input {
     padding: 1rem;
-    border: solid 1px #F6F8F9;
     border-radius: 2px;
     background-color: #A6ADB4;
     width: 260px;
@@ -151,6 +150,8 @@ li {
       border: solid 1px #72ACFF; }
     .footer__input:invalid {
       border: solid 1px #FF4D4D; }
+    .footer__input:empty {
+      border: solid 1px #F6F8F9; }
   @media screen and (max-width: 500px) {
     .footer__form {
       display: none; } }
