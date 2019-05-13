@@ -18,12 +18,10 @@ const newsSwiper = new Swiper ('.swiper-container', {
     // when window width is <= 640px
     	
   	},
-    
-    
+        
     spaceBetween: 30,
     direction: 'horizontal',
     loop: true,
-
     
     navigation: {
       nextEl: '.swiper-button-next',
@@ -33,7 +31,7 @@ const newsSwiper = new Swiper ('.swiper-container', {
   });
 
 const menuButton = document.querySelector('.navbar__menu');
-const footer  =document.querySelector('.footer');
+const footer = document.querySelector('.footer');
 
 menuButton.addEventListener('click', () =>{
   menuButton.classList.toggle('visible');
